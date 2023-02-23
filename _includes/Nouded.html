@@ -1,6 +1,6 @@
 
 {% for item in include.requirements %}
-  <p class="{{ include.class }}">
+  <p class="ml-{{ include.level }}">
     <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
     <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
 
@@ -13,7 +13,8 @@
     <tr>
       <td>
         {% if section.requirements %}
-          {% include Nouded.html requirements=section.requirements %}
+          {% assign level = include.level + 1 %}
+          {% include Nouded.html requirements=section.requirements level=level %}
         {% endif %}
       </td>
     </tr>
@@ -22,7 +23,8 @@
   {% endif %}
 
   {% if item.requirements %}
-    {% include Nouded.html requirements=item.requirements class='ml-1' %}
+    {% assign level = include.level + 1 %}
+    {% include Nouded.html requirements=item.requirements level=level %}
   {% endif %}
 
   </p>

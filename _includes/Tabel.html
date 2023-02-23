@@ -4,8 +4,8 @@
   <p class="adv">{{ category.notes }}</p>
   {% endif %}
 
-  {% assign cat_requirements = category.requirements %}
-  {% include Nouded.html requirements = cat_requirements %}
+  {% assign level = 0 %}
+  {% include Nouded.html requirements = category.requirements level=level %}
 
 {% endfor %}
 

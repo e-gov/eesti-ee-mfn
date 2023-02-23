@@ -295,6 +295,78 @@
       - number: 2.3.10
         name: >
           Tekstide ajakohasena hoidmine( toimetamine, tõlgete tellimine ja sisestus) on teenusepakkuja vastutus.
+  - number: 2.4
+    name: '**Isikustatud teenused**'
+  - name: '**Ärilised nõuded**'
+    sections:
+    - name: 'Teenuse visuaal'
+      requirements:
+      - number: 2.4.1
+        name: >
+          Teenuste arendamisel tuleb jälgida nõudeid, mis on kirjeldatud punktis [2.2](https://e-gov.github.io/eesti-ee-mfn/#2.2).
+      - number: 2.4.2
+        name: >
+          Teenuse visuaalne asukoht eesti.ee lehel on haldaja määrata ning teenuse nimi tuleb eesti.ee-ga kooskõlastada.
+      - number: 2.4.3
+        name: >
+          Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
+        requirements:
+        - number: 2.4.3.1
+          name: >
+            Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
+    - name: 'Otsing ja tagasiside'
+      requirements:
+      - number: 2.4.4
+        name: >
+          Teenuse juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
+        requirements:
+        - number: 2.4.4.1
+          name: >
+            Uute püsivate küsitluste/tagasiside vormide loomine on keelatud;
+        - number: 2.4.4.2
+          name: >
+            Ajutised küsitlused peavad olema kooskõlastatud riigiportaaliga.
+      - number: 2.4.5
+        name: >
+          Haldaja tagab vajaminevad otsingu baaskomponendi arendused. Otsing on eesti.ee ülene ning teenusesiseste otsingute loomine pole 
+          lubatud, va põhjendatud juhul, kui teistmoodi ei ole võimalik tagada teenuse kasutatavus. Lubatud on teenusesisesed filtrid.
+    - name: 'Kasutajatugi'
+      requirements:
+      - number: 2.4.6
+        name: >
+          Iga teenuse puhul peab olema loodud teenuse dokumentatsioon, mis käsitleb endas teenuse tutvustust, mille põhjal RIA kasutajatugi 
+          saab kasutajaid juhendada.
+        requirements:
+        - number: 2.4.6.1
+          name: >
+            Teenuses kuvatava ebakorrektse sisu kohta käivad küsimused ja keerulisemad probleemid suunatakse vaikimisi lahendamiseks 
+            teenusepakkuja kasutajatoele.
+      - number: 2.4.7
+        name: >
+          Teenuse juures peab olema teenusepakkuja nimi ja kasutajatoe kontakt (nii telefoninumber kui e-maili aadress), kuhu lõppkasutaja saab 
+          teenusega seotud küsimuste ja probleemidega pöörduda. 
+  - name: '**Tehnilised nõuded**'
+    sections:
+    - name: 'Üldnõuded'
+      requirements:
+      - number: 2.4.8
+        name: >
+          Teenus peab sisaldama minimaalselt ühte elutukse otspunkti, mis peab olema masinloetav ning mida saab siduda eesti.ee automaatsete veateadete lahendusega.
+    - name: 'Otsing'
+      requirements:
+      - number: 2.4.9
+        name: >
+          Teenuses olevad otsitavad andmed tuleb indekseerida minimaalselt Elasticsearch versioonis 7.x või Opensearch versioonis 2.5. Selleks saab kasutada riigiportaali 
+          enda _Elasticsearch'i_ või teenuse juurde listakse eraldi _Elasticsearch_.
+        requirements:
+        - number: 2.4.9.1
+          name: >
+            Riigiportaali tuleb informeerida, kui teenusele on üles seatud eraldi Elasticsearch, et teha vajalikud täiendavad liidestused;
+        - number: 2.4.9.2
+          name: >
+            Otsingu tulemused kuvatakse eesti.ee ühtsel otsingutulemuste lehel.
+
+
 
 - name: 'III Muud nõuded'
   title: 'III Muud nõuded'
