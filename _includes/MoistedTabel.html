@@ -2,12 +2,9 @@
 <table>
   <tr>
     <td>mõiste</td>
-    <td>nr</td>
     <td>selgitus</td>
   <tr>
-  {% capture moisteloendur %}{% increment nl %}{% endcapture %}
   {% for rida in site.data.Moisted %}
-    {% capture moisteloendur %}{% increment nl %}{% endcapture %}
     <tr>
       <td> {{ rida.moiste | markdownify }}</td>
       <td>
@@ -16,5 +13,3 @@
     </tr>
   {% endfor %}
 </table>
-
-<p>{{ moisteloendur }} mõistet.</p>
