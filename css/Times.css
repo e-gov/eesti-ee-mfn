@@ -112,7 +112,13 @@ ol {
 /*#region Tabelid */
 table { width: 100%; margin: 0 4em 2em 0; }
 table { border-collapse: collapse; }    
-table, th, td { border: 1px solid black; }
+table, th, td { 
+  border: 1px solid black; 
+  text-align: left;
+}
+th {
+  background-color: #f7f7f7;
+}
 th, td { padding: 6px; }
 /*#endregion */
 
@@ -216,5 +222,8 @@ a[href]:hover {
   border-color: tomato;
   border-style: none solid;
   background: LavenderBlush;
+}
+.ml-1 {
+  margin-left: 1rem;
 }
 /*#endregion */
