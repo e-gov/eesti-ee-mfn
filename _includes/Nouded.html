@@ -1,7 +1,9 @@
-{% for row in include.requirements %}
+{% for item in include.requirements %}
   <p>
-    <a href='{{ site.baseurl }}/#{{ row.no }}'>{{ row.no }}</a> 
-    <a id='{{ row.no }}'></a> {{ row.name | markdownify | remove: '<p>' | remove: '</p>' }}
-
+    <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
+    <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% if item.requirements %}
+      {% include Nouded.html nav=item.requirements %}
+    {% endif %}
   </p>
 {% endfor %}
