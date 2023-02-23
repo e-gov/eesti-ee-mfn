@@ -4,7 +4,7 @@ moisted: true
 nouded: true
 ---
 
-# Mittefunktsionaalsed nõuded v {{ site.version }}
+# Eesti.ee mittefunktsionaalsed nõuded v {{ site.version }}
 {: .no_toc}
 
 <div style='margin-bottom: 1rem;'>

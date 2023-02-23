@@ -4,8 +4,7 @@
 {% for kategooria in site.data.Nouded %}
   <h2>{{ kategooria.pealkiri }}</h2>
   {% if kategooria.markus %}
-  {{ kategooria.markus }}
-  {: .adv}
+  <p class="adv">{{ kategooria.markus }}</p>
   {% endif %}
 
   {% capture abikn %}{% increment kn %}{% endcapture %}
@@ -13,7 +12,7 @@
   {% for noue in kategooria.nouded %}
     {% capture noudeloendur %}{% increment nl %}{% endcapture %}
     <p>
-      <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a> <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son }}
+      <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a> <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify | remove: '<p>' | remove: '</p>' }}
       {% if noue.issues %}
       {{ noue.sel | markdownify }}
       {% endif %}
