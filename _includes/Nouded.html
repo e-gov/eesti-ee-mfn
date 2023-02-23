@@ -1,8 +1,11 @@
 
 {% for item in include.requirements %}
   <p class="ml-{{ include.level }}">
+    {% if item.number %}
     <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
-    <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
+    <a id='{{ item.number }}'></a> 
+    {% endif %}
+    {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
 
   {% if item.sections %}
   {% for section in item.sections %}
