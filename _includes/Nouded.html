@@ -1,7 +1,7 @@
-{% for requirement in include.requirements %}
+{% for row in include.requirements %}
   <p>
-    <a href='{{ site.baseurl }}/#{{ requirement.no }}'>{{ requirement.no }}</a> 
-    <a id='{{ requirement.no }}'></a> {{ requirement.name | markdownify | remove: '<p>' | remove: '</p>' }}
+    <a href='{{ site.baseurl }}/#{{ row.no }}'>{{ row.no }}</a> 
+    <a id='{{ row.no }}'></a> {{ row.name | markdownify | remove: '<p>' | remove: '</p>' }}
 
   </p>
 {% endfor %}
