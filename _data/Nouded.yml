@@ -1,9 +1,11 @@
 - kategooria:
-  nimetus: 'meta'
+  nimetus: 'liidestumine'
+  pealkiri: 'I Teenuste liidestamine eesti.ee-ga*'
+  markus: '*kehtib seni kuni ei ole hetkel kehtivat eesti.ee määrust muudetud'
   nouded:
     - nr: 1
-      son: 'Nõuete rakendamisel arvestada konkreetse tarkvara eripära.'
-      sel: 'Rakenduvad ainult need nõuded, mida konkreetse tarkvara iseloomu, ülesehituse ja kasutatavate komponentide kontekstis on mõistlik rakendada.'
+      son: 'Teenusepakkuja poolt volitatud isik täidab ja edastab iga uue teenuse liidestamise avalduse RIA kasutajatoele (help@ria.ee) või elektroonilise veebivormi kaudu. Avalduse vormi kehtestab haldaja.'
+      sel: ''
     - nr: 2
       son: 'Nõudeid rakendada hierarhia põhimõttel.'
       sel: 'RIA MFN-i nõudeid tuleb rakendada kõigis RIA infosüsteemides. Valdkonna MFN määratleb valdkonna tarkvara spetsiifilised nõuded. Hanke MFN-i nõuded täpsustavad ja täiendavad asutuse või valdkonna nõudeid. X-tee tuumtarkvara arendatakse ühiselt Soome riigiga. Vastavalt on ka MFN inglise keeles ja avaldatud Soome partnerasutuse GitHub-repos: [X-Road Non-Functional Requirements](https://github.com/vrk-kpa/xroad-joint-development/blob/master/NFR.md). RIHA nõuded asuvad [arhitektuuriteatmikus](https://arhitektuur.riha.ee/).'
