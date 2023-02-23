@@ -228,7 +228,73 @@
         name: >
           Otsuste tegemisel lähtutakse riigiportaalis kokkulepitud kasutajamugavuse printsiipidest, UI/UX parimatest praktikatest ning 
           teenuse kasutatavusest erinevates seadmetes.
-      
+      - number: 2.3.2
+        name: >
+          Kõikide artiklite puhul tuleb järgida ühtset eesti.ee-s kasutusel olevat keelelist stiili:
+        requirements:
+        - number: 2.3.2.1
+          name: >
+            asutuste nimed kirjutatakse eesti.ee-s väikese tähega;
+        - number: 2.3.2.2
+          name: >
+            kasutaja poole pöördutakse "Teie" või umbisikulist vormi kasutades;
+        - number: 2.3.2.3
+          name: >
+            Artiklite koostamisel tuleb arvestada [Sõbraliku sõna juhendis](https://www.eesti.ee/portaal/form.ffile?TPFAIL&FAIL&497) toodud soovitustega;
+      - number: 2.3.3
+        name: >
+          Artiklite struktuur peab vastama ühtsetele eesti.ee artiklite ülesehituse tavadele.
+        requirements:
+        - number: 2.3.3.1
+          name: >
+            Artikli kohustuslikud komponendid on:
+            * Sisuartikkel;
+            * Kokkuvõte;
+            * Teksti autorite loetelu asutuste täpsusega;
+            * Kontaktandmed, kuhu lõppkasutaja saab küsimuste korral pöörduda;
+            * Märksõnad (ingl. keyword, label);
+            * Vajadusel KKK, illustratsioonid, joonised vmt;
+            * Informatsiooni uuendamise kuupäev.
+        - number: 2.3.3.2
+          name: >
+            Artikli soovituslikud komponendid on
+            * Seotud seaduste nimekiri;
+            * Seotud teenuste nimekiri;
+            * Seotud asutuste nimekiri;
+            * Seotud artiklite nimekiri.
+      - number: 2.3.4
+        name: >
+          Kui punktis [2.3.3.2](https://e-gov.github.io/eesti-ee-mfn/#2.3.3.2) loetletud komponendid artikli jaoks eksisteerivad, 
+          siis peavad need olema artiklis viidatud.
+      - number: 2.3.5
+        name: >
+          Igale artiklile peab määrama vähemalt viis märksõna (keyword), mille järgi on artikkel leitav eesti.ee otsingust. 
+      - number: 2.3.6
+        name: >
+          Artiklite kuvamiseks eesti.ee lehel sisestatakse need eraldiseisvasse Artiklivaramu (ARVA) andmebaasi. ARVAle ülemineku 
+          aeg lepitakse kokku jooksvalt.
+      - number: 2.3.7
+        name: >
+          Artiklite tekstid peavad olema tõlgitud eesti, vene ja inglise keelde.
+      - number: 2.3.8
+        name: >
+          Infoteenuse asukoht eesti.ee vasakmenüüs lepitakse kokku koostöös riigiportaali ja teenusepakkujaga arvestades 
+          eesti.ee terviklikkust.
+      - number: 2.3.9
+        name: >
+          Artiklite juures olev tagasiside komponent on eesti.ee ülene ning selle eest vastutab haldaja.
+        requirements:
+        - number: 2.3.9.1
+          name: >
+            Uute püsivate küsitluste/tagasiside vormide loomine on keelatud.
+        - number: 2.3.9.2
+          name: >
+            Ajutised küsitlused peavad olema kooskõlastatud riigiportaaliga.
+    - name: 'Teenusepakkuja kohustused'
+      requirements:
+      - number: 2.3.10
+        name: >
+          Tekstide ajakohasena hoidmine( toimetamine, tõlgete tellimine ja sisestus) on teenusepakkuja vastutus.
 
 - name: 'III Muud nõuded'
   title: 'III Muud nõuded'
