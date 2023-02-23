@@ -1,0 +1,7 @@
+{% for requirement in requirements %}
+  <p>
+    <a href='{{ site.baseurl }}/#{{ requirement.no }}'>{{ requirement.no }}</a> 
+    <a id='{{ requirement.no }}'></a> {{ requirement.name | markdownify | remove: '<p>' | remove: '</p>' }}
+
+  </p>
+{% endfor %}
