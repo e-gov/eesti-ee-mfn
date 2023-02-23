@@ -13,7 +13,7 @@
     <tr>
       <td>
         {% if section.requirements %}
-          {% assign level = include.level + 1 %}
+          {% assign level = include.level | plus:1 %}
           {% include Nouded.html requirements=section.requirements level=level %}
         {% endif %}
       </td>
@@ -23,7 +23,7 @@
   {% endif %}
 
   {% if item.requirements %}
-    {% assign level = include.level + 1 %}
+    {% assign level = include.level | plus:1 %}
     {% include Nouded.html requirements=item.requirements level=level %}
   {% endif %}
 
