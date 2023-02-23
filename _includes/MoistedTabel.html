@@ -1,15 +1,5 @@
-<!-- {% increment kn %} -->
-<table>
-  <tr>
-    <td>mõiste</td>
-    <td>selgitus</td>
-  <tr>
-  {% for rida in site.data.Moisted %}
-    <tr>
-      <td> {{ rida.moiste | markdownify }}</td>
-      <td>
-        {{ rida.selgitus | markdownify }}
-      </td>
-    </tr>
-  {% endfor %}
-</table>
+{% for rida in site.data.Moisted %}
+<p>
+  <strong>{{ rida.moiste | markdownify }}</strong> - {{ rida.selgitus | markdownify }}
+</p>
+{% endfor %}
