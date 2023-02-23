@@ -2,8 +2,25 @@
   <p>
     <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
     <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
-    {% if item.requirements %}
-      {% include Nouded.html nav=item.requirements %}
-    {% endif %}
   </p>
+  {% if item.sections %}
+  <table>
+    {% for section in item.sections %}
+    <tr>
+      <td>{{ section.name }}</td>
+    </tr>
+    <tr>
+      <td>
+        {% if section.requirements %}
+          {% include Nouded.html requirements=section.requirements %}
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  {% if item.requirements %}
+    {% include Nouded.html requirements=item.requirements %}
+  {% endif %}
 {% endfor %}
