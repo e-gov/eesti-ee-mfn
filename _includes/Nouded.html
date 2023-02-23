@@ -5,8 +5,8 @@
     <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
 
   {% if item.sections %}
+  {% for section in item.sections %}
   <table>
-    {% for section in item.sections %}
     <tr>
       <th>{{ section.name }}</th>
     </tr>
@@ -18,8 +18,8 @@
         {% endif %}
       </td>
     </tr>
-    {% endfor %}
   </table>
+  {% endfor %}
   {% endif %}
 
   {% if item.requirements %}
