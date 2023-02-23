@@ -1,7 +1,8 @@
+<p class="ml-1">
 {% for item in include.requirements %}
-  <p class="ml-1">
-    <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
-    <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
+
+  <a href='{{ site.baseurl }}/#{{ item.number }}'>{{ item.number }}</a> 
+  <a id='{{ item.number }}'></a> {{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}
 
   {% if item.sections %}
   <table>
@@ -24,5 +25,5 @@
     {% include Nouded.html requirements=item.requirements %}
   {% endif %}
 
-  </p>
 {% endfor %}
+</p>
