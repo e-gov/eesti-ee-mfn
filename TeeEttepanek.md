@@ -16,18 +16,28 @@ Vältida tuleks olukorda, kus lugeja ei saa aru, mis probleemi nõue aitab lahen
 
 Probleemide arutamiseks on hea kasutada GitHub repo _issue_-sid. Tehniliselt kirjeldatakse nõue [MFN repo](https://github.com/e-gov/eesti-ee-mfn/) kaustas `_data` asuvas YAML-failis `Nouded.yml`. 
 
+## Kuidas mõistet lisada?
+
+- Mõistete kirjeldused on failis `_data\Moisted.yml`.
+- Mõiste elemendid:
+  - `moiste` - mõiste nimetus
+  - `selgitus` - mõiste selgitus
+
 ## Kuidas nõuet lisada?
 
 - Nõuete kirjeldused on failis `_data\Nouded.yml`.
-- Nõue paigutada vastava `kategooria` alla.
 - Nõude elemendid:
-  - `nr` - nõude järjenumber kategoorias; kategooriad nummerdatakse automaatselt
-  - `son` - sõnastus
-  - `sel` - seletus
-  - `issues` - probleemid, mida nõue aitab lahendada
-    - `issue`
-      - `nimetus` - probleem, mida nõue aitab lahendada
-      - `url` - GitHub issue URL.
+  - `name` - kategooria nimetus
+  - `title` - kategooria pealkiri
+  - `notes` - kategooria märkused (kuvatakse muust tekstist eristatult)
+  - `requirements` - kategooria alla kuuluvad nõuded (iga nõude alla saab omakorda lisada veel selle alla kuuluvaid nõudeid)
+    - `number` - nõude number
+    - `name` - nõude nimetus / kirjeldus
+    - `sections` - sektsioonid (nõuete grupi eristamiseks)
+      - `name` - sektsiooni pealkiri
+      - `requirements` - sektsiooni alla kuuluvad nõuded (iga nõude alla saab omakorda lisada veel selle alla kuuluvaid nõudeid)
+        - `number` - nõude number
+        - `name` - nõude nimetus / kirjeldus
 - Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
   - muudatuse kuupäev
   - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.

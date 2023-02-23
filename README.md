@@ -7,10 +7,6 @@
   - `moiste` - mõiste nimetus
   - `selgitus` - mõiste selgitus
 
-- Muudatuste tegemisel tuleks täiendada ka muutelugu (failis `Muutelugu.md`):
-  - muudatuse kuupäev
-  - muudatuse lühikirjeldus, soovitavalt viitega vastavale nõudele.
-
 
 # Kuidas nõuet lisada?
 
