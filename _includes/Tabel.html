@@ -1,0 +1,41 @@
+<!-- {% increment kn %} -->
+<table>
+  <tr>
+    <td>kategooria</td>
+    <td>nr</td>
+    <td>nõude sõnastus</td>
+    <td>nõude selgitus</td>
+  <tr>
+  {% capture noudeloendur %}{% increment nl %}{% endcapture %}
+  {% for kategooria in site.data.Nouded %}
+    {% capture abikn %}{% increment kn %}{% endcapture %}
+    {% assign nn = 0 %}
+    {% for noue in kategooria.nouded %}
+      {% capture noudeloendur %}{% increment nl %}{% endcapture %}
+      <tr>
+        <td> {{ kategooria.nimetus }}</td>
+        <td>
+          <a href='{{ site.baseurl }}/#{{ abikn }}.{{ noue.nr }}'>{{ abikn }}.{{ noue.nr }}</a>
+        </td>
+        <td>
+          <a id='{{ abikn }}.{{ noue.nr }}'></a>{{ noue.son | markdownify }}
+        </td>
+        <td>
+          {{ noue.sel | markdownify }}
+          {% if noue.issues %}
+          <img src='img/warning.png' style='width: 20px;'> Millist probleemi see lahendab? 
+            {% for issue in noue.issues %}
+              {% if issue.url %}
+                <a href='{{ issue.url }}' target='_new'>{{ issue.nimetus }}</a>
+              {% else %}
+                {{ issue.nimetus }} 
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  {% endfor %}
+</table>
+
+<p>{{ noudeloendur }} nõuet.</p>
