@@ -365,8 +365,114 @@
         - number: 2.4.9.2
           name: >
             Otsingu tulemused kuvatakse eesti.ee ühtsel otsingutulemuste lehel.
-
-
+    - name: 'NPM pakk'
+      requirements:
+      - number: 2.4.10
+        name: >
+          eesti.ee'ga liidestumisel NPM pakki kasutades on 2 (kaks) võimalust:
+        requirements:
+        - number: 2.4.10.1
+          name: >
+            liidestuv teenus loob NPM paki, mis ei sisalda päist, vasakmenüüd, jalust, vaid sisaldab ainult teenuse sisuosa. Sellisel juhul lisab riigiportaal 
+            teenuse ise eesti.ee-sse;
+        - number: 2.4.10.2
+          name: >
+            NPM core pakkide abil loob liidestuv teenus oma portaali, kus peab kasutama punktis [2.4.14](https://e-gov.github.io/eesti-ee-mfn/#2.4.14) toodud eesti.ee NPM põhi pakke.
+      - number: 2.4.11
+        name: >
+          Teenuse liidestamisel eesti.ee-ga punktis [2.4.12.1](https://e-gov.github.io/eesti-ee-mfn/#2.4.12.1) toodud viisil, peab NPM pakk sisaldama Angulari komponenti või komponente, mis vastavad järgmistele nõuetele:
+        requirements:
+        - number: 2.4.11.1
+          name: >
+            Angulari komponent peab kasutama minimaalset Angulari versiooni, mis on kasutusel riigiportaalis eesti.ee;
+        - number: 2.4.11.2
+          name: >
+            Pakk peab sisaldama dokumentatsiooni komponendi/komponentide kasutusele võtmiseks;
+        - number: 2.4.11.3
+          name: >
+            Pakk peab sisaldama komponendi automaatteste.
+      - number: 2.4.12
+        name: >
+          Teenuse liidestamisel eesti.ee-ga punktis [2.4.12.2](https://e-gov.github.io/eesti-ee-mfn/#2.4.12.2) toodud viisil peab teenus kasutama järgnevaid eesti.ee NPM põhi (ehk _core_) pakke (sulgudes on NPM paki nimi):
+        requirements:
+        - number: 2.4.12.1
+          name: >
+            vasakmenüü (_sidenav_);
+        - number: 2.4.12.2
+          name: >
+            ümbersuunamine (_redirect_);
+        - number: 2.4.12.3
+          name: >
+            päis (_header_);
+        - number: 2.4.12.4
+          name: >
+            otsing (_search_);
+        - number: 2.4.12.5
+          name: >
+            jalus (_footer_);
+        - number: 2.4.12.6
+          name: >
+            artikkel (_article_) (vastavalt vajadusele);
+        - number: 2.4.12.7
+          name: >
+            artikli tagasiside (_article_feedback_) (vastavalt vajadusele).
+      - number: 2.4.13
+        name: >
+          Isikustatud teenus on kohustatud kasutama lisaks NPM põhi (_core_) pakkidele ka järgnevaid NPM pakke:
+        requirements:
+        - number: 2.4.13.1
+          name: >
+            Timuri core pakk;
+        - number: 2.4.13.2
+          name: >
+            Timuri UI pakk.
+      - number: 2.4.14
+        name: >
+          Teenus peab kasutama minimaalset Angulari versiooni, mis on kasutusel eesti.ee-s.
+      - number: 2.4.15
+        name: >
+          NPM pakkide uute versioonide info edastatakse teenusepakkuja kontaktisikule kokkulepitud kanali kaudu. Kanal lepitakse kokku lepingus.
+        requirements:
+        - number: 2.4.15.1
+          name: >
+            Kanalisse lisatakse teenusepakkuja kontaktisik riigiportaali kontaktisiku poolt;
+        - number: 2.4.15.2
+          name: >
+            Teenusepakkuja kontaktisik on kohustatud jälgima nimetatud kanalit ning uue väikese muudatusega (minor change) NPM paki versiooni välja tulekul peab teenusepakkuja ise mõistliku aja 
+            jooksul kasutusele võtma kõige uuema NPM paki versiooni.
+      - number: 2.4.16
+        name: >
+          Suure ja kriitilise muudatusega (major ja breaking change) NPM pakkide kasutusele võtmine liidestuva teenuse poolt lepitakse iga kord eraldi kokku kontaktisikute vahel.
+      - number: 2.4.17
+        name: >
+          Riigiportaali poolt väljaantud NPM pakkide muutmine ja täiendamine ei ole lubatud, neid tuleb kasutada oma teenuse juures olemasoleval (_AS-IS_) kujul.
+  - number: 2.5
+    name: '**Käideldavus**'
+    sections:
+    - name: 'Üldtingimused'
+      requirements:
+      - number: 2.5.1
+        name: >
+          Käideldavuse osas tuleb lähtuda määruse "Eesti teabevärava eesti.ee haldamise, teabe kättesaadavaks tegemise, arendamise ning kasutamise nõuded ja kord"  § 15s sätesatust.
+    - name: 'Korralised ja planeerimata teenuse katkestused'
+      requirements:
+      - number: 2.5.2
+        name: >
+          Teenusega seotud korralisest katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama vähemalt 48 tundi enne katkestuse toimumist.
+        requirements:
+        - number: 2.5.2.1
+          name: >
+            Nädalavahetusel ja/või esmaspäeval toimuvatest katkestustest tuleb teavitada hiljemalt katkestusele eelneval reedel kell 10.00.
+      - number: 2.5.3
+        name: >
+          Korralise teenuse katkestuse korral eesti.ee lehel avaldatava teavituse teksti koostab ja edastab RIA kasutajatoele (help@ria.ee) teenusepakkuja kolmes keeles (eesti, vene ja inglise keeles).
+        requirements:
+        - number: 2.5.3.1
+          name: >
+            Teavituse tekst peab olema korrektne, lõppkasutajale arusaadav ning sobilik eesti.ee-s avaldamiseks;
+      - number: 2.5.4
+        name: >
+          Teenusega seotud planeerimata katkestustest peab teenusepakkuja RIA kasutajatuge (help@ria.ee) teavitama niipea kui võimalik, märkides võimaluse korral katkestuse eeldatava lõppaja.
 
 - name: 'III Muud nõuded'
   title: 'III Muud nõuded'
