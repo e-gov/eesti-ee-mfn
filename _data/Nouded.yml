@@ -139,8 +139,7 @@
           Teenuse loomiseks vajalikke visuaalseid elemente pakub haldaja.
       - number: 2.2.2
         name: >
-          Kui olemasolevate seas ei leidu vajalikku elementi, siis tuleb uue elemendi loomisel lähtuda  eesti.ee stiiliraamatust (kuni selle 
-          valmimiseni täidab selle rolli Veera Figma). Juhul kui kaks eelmanitut sisaldavad sama komponenti, tuleb lähtuda eesti.ee stiiliraamatust.
+          Kui olemasolevate seas ei leidu vajalikku elementi, siis tuleb uue elemendi loomisel lähtuda eesti.ee stiiliraamatust.
         requirements:
           - number: 2.2.2.1
             name: >
@@ -149,22 +148,18 @@
               nuppu, siis peavad uued nupud olema visuaalselt identsed. Erandid kooskõlastatakse riigiportaaliga.
           - number: 2.2.2.2
             name: >
-              Veera disainisüsteem: https://www.figma.com/file/nNCV5kRqdRkS8MOCK1ZbqU/Veera-Design-System?numberde-id=5458%3A144 (kehtib kuni 
-              p [2.2.2.3](https://e-gov.github.io/eesti-ee-mfn/#2.2.2.3) mainitud stiiliraamatu valmimiseni)
+              eesti.ee stiiliraamat: https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0
           - number: 2.2.2.3
-            name: >
-              eesti.ee stiiliraamat: täpne asukoht täpsustatakse (_valmib veebruari lõpp 2023_)
-          - number: 2.2.2.4
             name: >
               Riigiportaaliga tuleb kooskõlastada enne arendustegevuste algust:
             requirements:
-              - number: 2.2.2.4.1
+              - number: 2.2.2.3.1
                 name: >
                   Uued visuaalsed elemendid;
-              - number: 2.2.2.4.2
+              - number: 2.2.2.3.2
                 name: >
                   Uute visuaalsete elementide dokumentatsioon;
-              - number: 2.2.2.4.3
+              - number: 2.2.2.3.3
                 name: >
                   Lõplikud visuaalid;
       - number: 2.2.3
