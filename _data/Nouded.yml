@@ -127,7 +127,7 @@
       requirements:
       - number: 2.1.7.1
         name: >
-          Artiklite kuvamise ja haldusega seotud nõuded on kirjeldatud punktis 2.3.
+          Artiklite kuvamise ja haldusega seotud nõuded on kirjeldatud punktis [2.3](https://e-gov.github.io/eesti-ee-mfn/#2.3).
     - number: 2.1.8
       name: >
         Teenuse ja selles olevate andmete varundamine ei kuulu haldaja kohustuste hulka.
@@ -148,7 +148,7 @@
               nuppu, siis peavad uued nupud olema visuaalselt identsed. Erandid kooskõlastatakse riigiportaaliga.
           - number: 2.2.2.2
             name: >
-              eesti.ee stiiliraamat: https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0
+              eesti.ee stiiliraamat: [https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0](https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0)
           - number: 2.2.2.3
             name: >
               Riigiportaaliga tuleb kooskõlastada enne arendustegevuste algust:
@@ -161,7 +161,7 @@
                   Uute visuaalsete elementide dokumentatsioon;
               - number: 2.2.2.3.3
                 name: >
-                  Lõplikud visuaalid;
+                  Lõplikud visuaalid.
       - number: 2.2.3
         name: 'Nõuded mobiilivaatele:'
         requirements:
@@ -221,15 +221,14 @@
       requirements:
       - number: 2.3.1
         name: >
-          Otsuste tegemisel lähtutakse riigiportaalis kokkulepitud kasutajamugavuse printsiipidest, UI/UX parimatest praktikatest ning 
-          teenuse kasutatavusest erinevates seadmetes.
+          Artikkel (ja ka abitekst) peab olema keeleliselt korrektne, ajakohane, lihtsalt loetav, üheselt mõistetav ja informatiivne.
       - number: 2.3.2
         name: >
           Kõikide artiklite puhul tuleb järgida ühtset eesti.ee-s kasutusel olevat keelelist stiili:
         requirements:
         - number: 2.3.2.1
           name: >
-            asutuste nimed kirjutatakse eesti.ee-s väikese tähega;
+            asutuste nimetused kirjutatakse eesti.ee-s väikese tähega;
         - number: 2.3.2.2
           name: >
             kasutaja poole pöördutakse "Teie" või umbisikulist vormi kasutades;
@@ -243,20 +242,33 @@
         - number: 2.3.3.1
           name: >
             Artikli kohustuslikud komponendid on:
+            
             * Sisuartikkel;
+            
             * Kokkuvõte;
+            
             * Teksti autorite loetelu asutuste täpsusega;
+            
             * Kontaktandmed, kuhu lõppkasutaja saab küsimuste korral pöörduda;
+            
             * Märksõnad (ingl. keyword, label);
+            
             * Vajadusel KKK, illustratsioonid, joonised vmt;
+            
             * Informatsiooni uuendamise kuupäev.
         - number: 2.3.3.2
           name: >
             Artikli soovituslikud komponendid on
+            
             * Seotud seaduste nimekiri;
+            
             * Seotud teenuste nimekiri;
+            
             * Seotud asutuste nimekiri;
-            * Seotud artiklite nimekiri.
+            
+            * Seotud artiklite nimekiri;
+            
+            * Seotud blankettide nimekiri.
       - number: 2.3.4
         name: >
           Kui punktis [2.3.3.2](https://e-gov.github.io/eesti-ee-mfn/#2.3.3.2) loetletud komponendid artikli jaoks eksisteerivad, 
@@ -305,10 +317,6 @@
       - number: 2.4.3
         name: >
           Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
-        requirements:
-        - number: 2.4.3.1
-          name: >
-            Lõppkasutajale kuvatavad teenuse tekstid (sh abitekstid, päringu vastused jmt) peavad olema tõlgitud eesti, vene ja inglise keelde.
     - name: 'Otsing ja tagasiside'
       requirements:
       - number: 2.4.4
