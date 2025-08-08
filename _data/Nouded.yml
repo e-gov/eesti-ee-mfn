@@ -148,7 +148,7 @@
               nuppu, siis peavad uued nupud olema visuaalselt identsed. Erandid kooskõlastatakse riigiportaaliga.
           - number: 2.2.2.2
             name: >
-              eesti.ee stiiliraamat: [https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0](https://www.figma.com/file/J58K08LMQDeHpdSfM18wU2/Eesti.ee-stiiliraamat-1.0?node-id=3:7900&t=CCFB3LPBNwmtG2Ym-0)
+              eesti.ee stiiliraamat: [https://www.figma.com/design/XB54Mz8eyhjwhEx4Myvd5w/Eesti.ee-stiiliraamat-1.1](https://www.figma.com/design/XB54Mz8eyhjwhEx4Myvd5w/Eesti.ee-stiiliraamat-1.1)
           - number: 2.2.2.3
             name: >
               Riigiportaaliga tuleb kooskõlastada enne arendustegevuste algust:
@@ -234,7 +234,7 @@
             kasutaja poole pöördutakse "Teie" või umbisikulist vormi kasutades;
         - number: 2.3.2.3
           name: >
-            Artiklite koostamisel tuleb arvestada [Sõbraliku sõna juhendis](https://www.eesti.ee/portaal/form.ffile?TPFAIL&FAIL&497) toodud soovitustega;
+            Artiklite koostamisel tuleb arvestada [Sõbraliku sõna juhendis](https://www.eesti.ee/static/files/veebitekstide-juhend.pdf) toodud soovitustega;
       - number: 2.3.3
         name: >
           Artiklite struktuur peab vastama ühtsetele eesti.ee artiklite ülesehituse tavadele.
